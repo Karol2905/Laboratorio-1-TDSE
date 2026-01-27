@@ -79,11 +79,13 @@ Al ejecutar los notebooks se obtienen visualizaciones de los datos, gráficas de
 
  Lo primero que debemos realizar es abrir el espacio de codigo previamente creado.
 
- ![alt text](<Captura de pantalla de 2026-01-27 00-43-55.png>)
+
+ ![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-43-55.png)
 
 Luego los notebooks fueron cargados manualmente en **AWS SageMaker Studio** utilizando la interfaz web, solo arrastrando los notebooks.
 
-![alt text](<Captura de pantalla de 2026-01-27 00-51-17.png>)
+![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-51-17.png)
+
 
 Despues de cargarlos, seleccionamos un kernel compatible y ejecutamos los cuadernos.
 ---
@@ -93,16 +95,18 @@ Despues de cargarlos, seleccionamos un kernel compatible y ejecutamos los cuader
 
 ## Notebook 1
 
-![alt text](<Captura de pantalla de 2026-01-27 00-51-25.png>)
-![alt text](<Captura de pantalla de 2026-01-27 00-51-33.png>)
-![alt text](<Captura de pantalla de 2026-01-27 00-51-51.png>)
+![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-51-25.png)
+![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-51-33.png)
+![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-51-51.png)
+
 ---
 ## Notebook 2
-![alt text](<Captura de pantalla de 2026-01-27 00-53-35.png>)
-![alt text](<Captura de pantalla de 2026-01-27 00-53-30.png>)
-![alt text](<Captura de pantalla de 2026-01-27 00-53-45.png>)
-![alt text](<Captura de pantalla de 2026-01-27 00-53-52.png>)
-![alt text](<Captura de pantalla de 2026-01-27 00-54-17.png>)
+![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-53-35.png)
+![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-53-30.png)
+![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-53-45.png)
+![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-53-52.png)
+![Texto alternativo](images/Captura%20de%20pantalla%20de%202026-01-27%2000-54-17.png)
+
 ---
 ### Comparación entre ejecución local y en la nube
 
