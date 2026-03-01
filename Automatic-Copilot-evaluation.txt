@@ -1,0 +1,62 @@
+Summary
+
+Overall technical and conceptual assessment:
+El repositorio presenta una implementación didáctica y correcta de regresión lineal y polinómica desde primeros principios usando únicamente Python, NumPy y Matplotlib. Los notebooks contienen dataset embebido, visualizaciones, implementaciones no vectorizadas y vectorizadas de gradientes, experimentos con distintas tasas de aprendizaje, análisis de la superficie de costo e interacción entre características. La evidencia de ejecución en AWS SageMaker está documentada con capturas en el README.
+
+Grading Breakdown (0.0 – 5.0 scale)
+
+- Repository structure & compliance: 0.5 / 0.5
+  - Razonamiento: README presente, dos notebooks en la raíz, datasets definidos dentro de los notebooks y solo se usan NumPy/Matplotlib. Estructura cumple con las restricciones.
+
+- Notebook 1 – Linear regression: 2.0 / 2.0
+  - Razonamiento: Contiene visualización e interpretación del dataset; hipótesis y MSE implementadas; superficie de costo calculada y graficada (malla + surface plot) con interpretación; derivadas correctas; implementaciones de gradiente no vectorizado y vectorizado y verificación; experimento con ≥3 tasas de aprendizaje; gráfica de convergencia y discusión; ajuste final y discusión sobre límites del modelo lineal.
+
+- Notebook 2 – Polynomial regression: 2.0 / 2.0
+  - Razonamiento: Visualización con codificación por temperatura; ingeniería de características (M, T, M^2, M·T) implementada; pérdida y gradientes vectorizados correctos; entrenamiento y gráfica de convergencia presentes; experimento de selección de características (M1/M2/M3) implementado y comparado; análisis del costo frente al coeficiente de interacción (`w_MT` sweep) presente; ejemplo de inferencia e interpretación incluida.
+
+- Cloud execution evidence (SageMaker): 0.5 / 0.5
+  - Razonamiento: `README.md` incluye descripciones del procedimiento en SageMaker y múltiples capturas de pantalla (notebooks cargados y plots). Proporciona una breve comparación local vs nube.
+
+Total: 5.0 / 5.0
+
+Final Grade
+
+Final grade: 5.0 / 5.0
+Resultado: PASS (>= 3.0)
+
+Strengths
+
+- Implementaciones claras y pedagógicas de gradientes y descenso por gradiente (vectorizado y no vectorizado).
+- Presencia de todos los experimentos obligatorios (superficie de costo, barrido de tasas de aprendizaje, selección de características, barrido del término de interacción, inferencia).
+- Uso correcto de NumPy y Matplotlib; datasets definidos inline; notebooks ejecutables.
+- Documentación en `README.md` con evidencia de ejecución en AWS SageMaker (capturas) y pasos para reproducir.
+
+Issues & Missing Elements
+
+- No hay faltantes importantes respecto a la especificación; el material cubre los requisitos mandatorios.
+- Posible mejora (no deducción): incluir una breve comparación numérica entre métodos (p. ej., solución analítica por ecuaciones normales) como referencia para la convergencia del gradiente.
+
+TA Feedback to Student
+
+Buen trabajo. El enfoque es sólido y pedagógico: las implementaciones no-vectorizadas ayudan a entender la mecánica del gradiente, y las versiones vectorizadas son eficientes y correctas. Las visualizaciones y los experimentos (tasas de aprendizaje, selección de características, barrido del coeficiente de interacción) son completos y bien explicados. Para mejorar: agregar una comparación numérica con la solución analítica (ecuaciones normales) y/o reportar métricas adicionales (p. ej., RMSE) para complementar la discusión de error final. Considera añadir comentarios menores sobre la escala de las variables (justificación de estandarización) cuando se compara entre modelos.
+
+AI-Generation Assessment (informative only)
+
+A. Qualitative assessment
+
+- Indicadores de posible apoyo de herramientas AI: lenguaje en explicaciones relativamente conciso y consistente, algunas frases útiles pero genéricas en las secciones interpretativas (p. ej., explicaciones sobre limites de la linealidad), y estructura muy ordenada de los notebooks.
+- Indicadores de trabajo humano: presencia de pequeñas decisiones pedagógicas (implementaciones no vectorizadas y su verificación contra las vectorizadas), prints intermedios durante el entrenamiento, y comentarios/interpretaciones contextuales sobre las predicciones que reflejan entendimiento aplicado.
+
+B. Quantitative estimate (observational)
+
+- Code: ~10% (es posible que ciertos fragmentos estándar o plantillas hayan sido asistidos) 
+- Explanations / markdown: ~20% 
+- README: ~10%
+
+C. Commentary
+
+Esta evaluación es observacional y no implica mala conducta: la mezcla y el estilo apuntan principalmente a trabajo humano con la posible asistencia puntual de herramientas para redacción o formatos repetitivos. "This assessment is observational and does not imply misconduct."
+
+---
+
+Reporte generado por el TA automático (Copilot) basado en el contenido del repositorio, sin modificar notebooks ni README.
